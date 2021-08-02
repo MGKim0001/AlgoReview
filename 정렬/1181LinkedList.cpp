@@ -66,6 +66,7 @@ void insertList(Node* h, Node* newNode)
 
   while(curr->next != nullptr)
   {
+    // found bigger string, insert in the middle
     if(compareString(curr->data, newNode->data) == 1)
     {
       prev->next = newNode;
@@ -77,6 +78,7 @@ void insertList(Node* h, Node* newNode)
     curr = curr->next;
   }
 
+  // insert at the end
   prev->next = newNode;
   newNode->next = curr;
 }

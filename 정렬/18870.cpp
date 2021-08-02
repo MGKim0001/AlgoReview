@@ -18,7 +18,6 @@ int main()
   int n;
   cin >> n;
   vector<int> vv(n);
-  vector<pair<int, int>> nums;
 
   int i;
   for(i = 0; i < n; i++)
